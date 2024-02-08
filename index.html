@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Louvor | Integra</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="form__container">
+      <div class="form__content">
+        <h1>IBNC CRIATIVIDADE - LOUVOR - AUDIÇÕES 2024</h1>
+
+        <p>
+          Olá!!
+          <strong
+            >Bem vindo a Primeira Fase das audições para o Ministério de Louvor
+            de 2023! </strong
+          >Nessa primeira etapa, que será totalmente online, iremos focar em sua
+          técnica e performance dentro de sua área de atuação (vocal ou
+          instrumental).
+        </p>
+
+        <div class="tag--warning">
+          <span>
+            O prazo final para preenchimento desse formulário com a submissão
+            dos vídeos será até o dia 11/03/2024, após esse prazo, esse
+            formulário e os processos de audições irão se encerrar até que
+            venham as próximas audições somente em 2025!
+          </span>
+        </div>
+
+        <span>
+          Após esse prazo, em alguns dias, (sendo ou não aprovado para a próxima
+          fase) entraremos em contato comunicando o resultado (através de email
+          ou WhatsApp).
+        </span>
+
+        <p>
+          Desejamos a você uma grande audição! Lembrando sempre que, fazendo
+          parte do ministério de louvor ou não, você está mais que convidado
+          para fazer parte de um dos nossos times e assim começar a SERVIR o
+          quanto antes!
+        </p>
+
+        <p>Deus abençoe, IBNC - CRIATIVIDADE</p>
+
+        <form action="submit.php" method="post">
+          <div class="input__box">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="input__box">
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input
+              type="date"
+              id="dataNascimento"
+              name="dataNascimento"
+              required
+            />
+          </div>
+
+          <div class="input__box">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required />
+          </div>
+
+          <div class="input__box">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="input__box">
+            <label for="redeSocial">Rede Sociais - Instagram, Facebook:</label>
+            <span>insira seu nome de perfil</span>
+            <input type="text" id="redeSocial" name="redeSocial" required />
+          </div>
+
+          <div class="input__box">
+            <label for="question">Faz parte do corpo de membros da IBNC:</label>
+            <span
+              >(se batizou na IBNC ou se batizou em outra igreja e se transferiu
+              como membro para a nossa?)</span
+            >
+            <div class="tag--informative">
+              <span
+                >OBS- Você PRECISA ser membro da IBNC pra fazer parte desse
+                processo, se você ainda não é membro sua audição será
+                desconsiderada</span
+              >
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="yes"
+                name="question"
+                value="yes"
+                required
+              />
+              <label for="yes">Sim</label>
+            </div>
+            <div>
+              <input type="radio" id="no" name="question" value="no" required />
+              <label for="no">Não</label>
+            </div>
+
+            <h2>Audições</h2>
+
+            <div class="tag--warning">
+              Nessa sessão, serão obrigatórios 3 vídeos diferentes e você deve
+              gravá-los de acordo com o que será pedido abaixo para cada talento
+              diferente.
+            </div>
+
+            <ol>
+              <li>
+                Baixe o playback auxiliar de cada música da sua audição (você
+                deve cantar/tocar “por cima” do áudio);
+              </li>
+              <li>Grave seus vídeos em formato PAISAGEM/HORIZONTAL;</li>
+              <li>
+                Cante/toque dando o seu melhor, respeitando o arranjo original
+                da música;
+              </li>
+              <li>
+                Poste seus vídeos na sua conta do YOUTUBE como "NÃO LISTADO/LINK
+                PRIVADO";
+              </li>
+              <li>Copie o link de cada vídeo nas sessões abaixo.</li>
+            </ol>
+
+            <div class="input__box" style="margin-top: 50px">
+              <label>Esta audição é para qual talento?</label>
+              <div class="tag--informative">
+                (sugerimos que você inicie seu caminho conosco no seu talento
+                MAIS FORTE, se for o caso de mesmo assim, desejar participar da
+                audição para mais de um talento, favor submeter um novo
+                formulário com os novos vídeos respectivos do segundo
+                instrumento.)
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="vocal"
+                  name="talento"
+                  value="vocal"
+                  required
+                />
+                <label for="vocal">VOCAL</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="teclado"
+                  name="talento"
+                  value="teclado"
+                  required
+                />
+                <label for="teclado">TECLADO</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="violao"
+                  name="talento"
+                  value="violao"
+                  required
+                />
+                <label for="violao">VIOLÃO</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="guitarra"
+                  name="talento"
+                  value="guitarra"
+                  required
+                />
+                <label for="guitarra">GUITARRA</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="baixo"
+                  name="talento"
+                  value="baixo"
+                  required
+                />
+                <label for="baixo">BAIXO</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="bateria"
+                  name="talento"
+                  value="bateria"
+                  required
+                />
+                <label for="bateria">BATERIA</label>
+              </div>
+
+              <h2>Vídeo Audições 1</h2>
+
+              <ol style="margin-top: 10px">
+                <li>
+                  Baixe o playback auxiliar de cada música da sua audição (você
+                  deve cantar/tocar “por cima” do áudio);
+                </li>
+                <li>Grave seus vídeos em formato PAISAGEM/HORIZONTAL;</li>
+                <li>
+                  Cante/toque dando o seu melhor, respeitando o arranjo original
+                  da música;
+                </li>
+                <li>
+                  Poste seus vídeos na sua conta do YOUTUBE como "NÃO
+                  LISTADO/LINK PRIVADO";
+                </li>
+                <li>
+                  Copie o link de seu vídeo em questão ao fim desta sessão.
+                </li>
+              </ol>
+
+              <ul style="margin-top: 25px">
+                <li>
+                  VOCAL: "MINHA HISTÓRIA" - (versão em Português da "HINDSIGHT -
+                  HILLSONG YOUNG & FREE) -
+                  <a
+                    target="new"
+                    href="https://drive.google.com/drive/folders/1N6iEAd3Ndems66JyH9ZoqGU6l27ciK9_?usp=share_link"
+                    >playback vocal Minha História</a
+                  >
+                </li>
+                <li>
+                  TECLADO: "GRAVES INTO GARDENS" - ELEVATION WORSHIP -
+                  <a
+                    href="https://drive.google.com/file/d/13P_IClyGnwWcNNSuXYOzOhrM-gw1pT80/view?usp=share_link"
+                    target="new"
+                    >playback teclado Graves Into Gardens</a
+                  >
+                </li>
+                <li>
+                  VIOLÃO: "GRAVES INTO GARDENS" - ELEVATION WORSHIP -
+                  <a
+                    href="https://drive.google.com/file/d/1jSB-nz3S75hJIcX35lFt32WazTY6Shkp/view?usp=share_link"
+                    target="new"
+                    >playback violão Graves Into Gardens
+                  </a>
+                </li>
+                <li>
+                  GUITARRA: "LET GO - LIVE" - HILLSONG YOUNG & FREE -
+                  <a
+                    href="https://drive.google.com/file/d/1Wd7soWe3I_LDUK_BtEHPLTndzn_Eu_Eq/view?usp=share_link"
+                    target="new"
+                    >playback guitarra Let Go
+                  </a>
+                </li>
+                <li>
+                  BAIXO: "HINDSIGHT" - HILLSONG YOUNG & FREE -
+                  <a
+                    href="https://drive.google.com/file/d/1h-XRQOkkcBqWxlQfxMzC7-I5NHqgA6Y3/view?usp=share_link"
+                    target="new"
+                    >playback baixo Hindsight
+                  </a>
+                </li>
+                <li>
+                  BATERIA: "SEE THE LIGHT" - HILLSONG WORSHIP -
+                  <a
+                    href="https://drive.google.com/file/d/1sv2kBA8PAPHfXwHEGlXfR5H-FC0ssQNh/view?usp=share_link"
+                    target="new"
+                    >playback bateria See The Light</a
+                  >
+                </li>
+              </ul>
+
+              <input
+                type="text"
+                id="video1"
+                name="video1"
+                placeholder="Insira o link do video"
+                required
+              />
+
+              <h2>Vídeo Audições 2</h2>
+
+              <ol style="margin-top: 10px">
+                <li>
+                  Baixe o playback auxiliar de cada música da sua audição (você
+                  deve cantar/tocar “por cima” do áudio);
+                </li>
+                <li>Grave seus vídeos em formato PAISAGEM/HORIZONTAL;</li>
+                <li>
+                  Cante/toque dando o seu melhor, respeitando o arranjo original
+                  da música;
+                </li>
+                <li>
+                  Poste seus vídeos na sua conta do YOUTUBE como "NÃO
+                  LISTADO/LINK PRIVADO";
+                </li>
+                <li>
+                  Copie o link de seu vídeo em questão ao fim desta sessão.
+                </li>
+              </ol>
+
+              <ul style="margin-top: 25px">
+                <li>
+                  VOCAL: "VITORIOSO ÉS" - (versão em Português da "VICTORY IS
+                  YOURS - BETHEL MUSIC) -
+                  <a
+                    target="new"
+                    href="https://drive.google.com/drive/folders/11Ido8WyuWPfADnxt8GVh2g2vtye4vEoS?usp=share_link"
+                    >playback vocal Vitorioso És</a
+                  >
+                </li>
+                <li>
+                  TECLADO: "KING OF KINGS" - HILLSONG WORSHIP -
+                  <a
+                    href="https://drive.google.com/file/d/1vSUV4SUM_DQC90HbvWvoc_NWbUZFo5hd/view?usp=share_link"
+                    target="new"
+                    >playback teclado King of Kings</a
+                  >
+                </li>
+                <li>
+                  VIOLÃO: "GOODNESS OF GOD" - BETHEL MUSIC -
+                  <a
+                    href="https://drive.google.com/file/d/1-X33P0wYpQ3hcdkoJnJOR42uukSKwbtQ/view?usp=share_link"
+                    target="new"
+                    >playback violão Goodness of God
+                  </a>
+                </li>
+                <li>
+                  GUITARRA: "KING OF KINGS" - HILLSONG WORSHIP -
+                  <a
+                    href="https://drive.google.com/file/d/1rZRW9-PHsx6tTGDaLP69MioDcKkPaucI/view?usp=share_link"
+                    target="new"
+                    >playback guitarra King of Kings
+                  </a>
+                </li>
+                <li>
+                  BAIXO: "WHAT A BEAUTIFUL NAME" - HILLSONG WORSHIP -
+                  <a
+                    href="https://drive.google.com/file/d/1ZTTO75BQWqUbb7IgJ7_LudTJnXWMhXEb/view?usp=share_link"
+                    target="new"
+                    >playback baixo What a Beautiful Name
+                  </a>
+                </li>
+                <li>
+                  BATERIA: "WHAT A BEAUTIFUL NAME" - HILLSONG WORSHIP -
+                  <a
+                    href="https://drive.google.com/file/d/1fyK7LTWXGaIMe64ASOu9HQ_k7wrh9DT5/view?usp=share_link"
+                    target="new"
+                    >playback bateria What a Beautiful Name</a
+                  >
+                </li>
+              </ul>
+
+              <input
+                type="text"
+                id="video2"
+                name="video2"
+                placeholder="Insira o link do video"
+                required
+              />
+
+              <h2>Vídeo Audições 3</h2>
+              <p>
+                Nesse vídeo o conteúdo é LIVRE, queremos ouvir o que você tem
+                para nos apresentar! Se você tem algo que seja importante e
+                relevante para adicionar às suas audições, essa é a melhor hora
+                de nos mostrar. (você pode também acrescentar aqui coisas que
+                não pôde nos mostrar nos vídeos anteriores, por exemplo: abrir
+                vozes que não abriu, arranjos que não estão lá mas você acredita
+                que combinaria com as músicas, improvisações, etc e etc, aqui
+                você pode e deve ser criativo!)
+              </p>
+              <input
+                type="text"
+                id="video3"
+                name="video3"
+                placeholder="Insira o link do video"
+                required
+              />
+
+              <button type="submit" style="margin-top: 50px">ENVIAR</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
